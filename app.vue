@@ -22,8 +22,10 @@
               placeholder="Votre adresse email"
               class="newsletter-input"
               required
-              @keyup.enter="subscribe"
             />
+            <button type="submit" class="newsletter-button" :disabled="loading">
+              {{ loading ? 'Envoi...' : "S'inscrire" }}
+            </button>
           </form>
           <p v-if="message" :class="['newsletter-message', messageType]">{{ message }}</p>
         </div>

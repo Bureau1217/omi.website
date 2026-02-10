@@ -9,9 +9,10 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const apiKey = process.env.MAILCHIMP_API_KEY
-  const audienceId = process.env.MAILCHIMP_AUDIENCE_ID
-  const dc = process.env.MAILCHIMP_DC
+  const config = useRuntimeConfig()
+  const apiKey = config.mailchimpApiKey
+  const audienceId = config.mailchimpAudienceId
+  const dc = config.mailchimpDc
 
   const url = `https://${dc}.api.mailchimp.com/3.0/lists/${audienceId}/members`
 

@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  modules: ['@tresjs/nuxt'],
   runtimeConfig: {
     mailchimpApiKey: process.env.MAILCHIMP_API_KEY,
     mailchimpAudienceId: process.env.MAILCHIMP_AUDIENCE_ID,

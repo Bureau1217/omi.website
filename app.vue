@@ -3,18 +3,38 @@
     <img src="/logo-omi-site.svg" alt="Omi" class="top-left-logo" :class="{ 'logo-orange': heroScrolled }" />
     <a href="#footer" class="keep-in-touch-btn">Keep in touch</a>
     <div class="hero-section" :class="{ scrolled: heroScrolled }" @wheel.prevent="onHeroWheel">
-      <img src="/A4 - 169.png" alt="Hero background" class="hero-bg-image" />
       <div class="hero-overlay">
         <div class="hero-title">
           <div class="title-line">
             <span class="title-omi">omi</span>
-            <img src="/Union.svg" alt="" class="title-picto picto-1" />
+            <svg class="title-picto-svg" viewBox="0 0 159 159" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="img1" patternUnits="userSpaceOnUse" width="159" height="159">
+                  <image href="/A4 - 169.png" x="0" y="0" width="159" height="159" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+              </defs>
+              <path d="M10.2079 103.647C-3.38989 90.0492 -3.40404 68.017 10.1763 54.4367C12.8452 51.7677 15.8407 49.6239 19.0344 48.005C29.1381 42.8835 42.8838 29.1378 48.0053 19.0341C49.6242 15.8404 51.7681 12.8449 54.437 10.176C68.0173 -3.40435 90.0495 -3.39019 103.647 10.2076C106.369 12.9293 108.546 15.989 110.18 19.2511C115.225 29.328 128.724 42.8277 138.801 47.8727C142.063 49.5059 145.123 51.6834 147.845 54.4051C161.443 68.0029 161.457 90.0351 147.876 103.615C145.207 106.284 142.212 108.428 139.018 110.047C128.915 115.169 115.169 128.914 110.048 139.018C108.429 142.212 106.285 145.207 103.616 147.876C90.0354 161.456 68.0032 161.442 54.4054 147.845C51.6837 145.123 49.5061 142.063 47.8729 138.801C42.828 128.724 29.3284 115.224 19.2516 110.179C15.9894 108.546 12.9297 106.369 10.2079 103.647Z" fill="url(#img1)"/>
+            </svg>
             <span class="title-text">Soil</span>
           </div>
           <div class="title-line">
-            <img src="/Union-1.svg" alt="" class="title-picto picto-2" />
+            <svg class="title-picto-svg" viewBox="0 0 159 159" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="img2" patternUnits="userSpaceOnUse" width="159" height="159">
+                  <image href="/A4 - 169.png" x="0" y="0" width="159" height="159" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+              </defs>
+              <path d="M10.2079 103.647C-3.38989 90.0492 -3.40404 68.017 10.1763 54.4367C12.8452 51.7677 15.8407 49.6239 19.0344 48.005C29.1381 42.8835 42.8838 29.1378 48.0053 19.0341C49.6242 15.8404 51.7681 12.8449 54.437 10.176C68.0173 -3.40435 90.0495 -3.39019 103.647 10.2076C106.369 12.9293 108.546 15.989 110.18 19.2511C115.225 29.328 128.724 42.8277 138.801 47.8727C142.063 49.5059 145.123 51.6834 147.845 54.4051C161.443 68.0029 161.457 90.0351 147.876 103.615C145.207 106.284 142.212 108.428 139.018 110.047C128.915 115.169 115.169 128.914 110.048 139.018C108.429 142.212 106.285 145.207 103.616 147.876C90.0354 161.456 68.0032 161.442 54.4054 147.845C51.6837 145.123 49.5061 142.063 47.8729 138.801C42.828 128.724 29.3284 115.224 19.2516 110.179C15.9894 108.546 12.9297 106.369 10.2079 103.647Z" fill="url(#img2)"/>
+            </svg>
             <span class="title-text">Health</span>
-            <img src="/Union-2.svg" alt="" class="title-picto picto-3" />
+            <svg class="title-picto-svg" viewBox="0 0 159 159" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="img3" patternUnits="userSpaceOnUse" width="159" height="159">
+                  <image href="/A4 - 169.png" x="0" y="0" width="159" height="159" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+              </defs>
+              <path d="M10.2079 103.647C-3.38989 90.0492 -3.40404 68.017 10.1763 54.4367C12.8452 51.7677 15.8407 49.6239 19.0344 48.005C29.1381 42.8835 42.8838 29.1378 48.0053 19.0341C49.6242 15.8404 51.7681 12.8449 54.437 10.176C68.0173 -3.40435 90.0495 -3.39019 103.647 10.2076C106.369 12.9293 108.546 15.989 110.18 19.2511C115.225 29.328 128.724 42.8277 138.801 47.8727C142.063 49.5059 145.123 51.6834 147.845 54.4051C161.443 68.0029 161.457 90.0351 147.876 103.615C145.207 106.284 142.212 108.428 139.018 110.047C128.915 115.169 115.169 128.914 110.048 139.018C108.429 142.212 106.285 145.207 103.616 147.876C90.0354 161.456 68.0032 161.442 54.4054 147.845C51.6837 145.123 49.5061 142.063 47.8729 138.801C42.828 128.724 29.3284 115.224 19.2516 110.179C15.9894 108.546 12.9297 106.369 10.2079 103.647Z" fill="url(#img3)"/>
+            </svg>
           </div>
           <div class="title-line">
             <span class="title-text">Compagnon</span>

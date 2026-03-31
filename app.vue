@@ -57,6 +57,28 @@
             relationship with the living systems we care for.
           </p>
         </div>
+        <div class="sliderbox-section">
+          <div class="sliderbox-columns">
+            <SliderBox
+              number="1"
+              title="Analyse du sol"
+              text="Omi mesure en temps réel les nutriments, l'humidité et la santé de votre sol pour des plantes en pleine forme."
+              image="/photo.webp"
+            />
+            <SliderBox
+              number="2"
+              title="Mycélium actif"
+              text="Le réseau fongique naturel renforce les racines et améliore l'absorption des nutriments essentiels."
+              image="/photo.webp"
+            />
+            <SliderBox
+              number="3"
+              title="Conseils personnalisés"
+              text="Recevez des recommandations adaptées à chaque plante pour optimiser leur croissance."
+              image="/photo.webp"
+            />
+          </div>
+        </div>
         <div class="hero-wrapper">
           <div class="model-glow"></div>
           <img src="/hero-image.png" alt="Omi Product" class="hero-image" />
@@ -89,6 +111,13 @@
             position="bottom-right"
           />
         </div>
+        </div>
+    </div>
+    <div class="video-section">
+      <div class="video-columns">
+        <CardVideo src="/insertion.mp4" />
+        <CardVideo src="/mycélium 2.mp4" />
+        <CardVideo src="/arrosage.mp4" />
       </div>
     </div>
     <div class="two-columns">
@@ -98,6 +127,9 @@
       <div class="column-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
+    </div>
+    <div class="mosaic-section">
+      <Mosaic />
     </div>
     <div id="footer" class="footer-3d">
       <div class="footer-3d-left">
@@ -128,11 +160,6 @@
         <div class="footer-credits">
           Projet réalisé par Bureau 1217
         </div>
-      </div>
-      <div class="footer-3d-right">
-        <ClientOnly>
-          <OmiModel />
-        </ClientOnly>
       </div>
     </div>
   </div>

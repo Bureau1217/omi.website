@@ -16,7 +16,7 @@
             <img src="/Union-2.svg" alt="" class="title-picto-svg" />
           </div>
           <div class="title-line">
-            <span class="title-text">Compagnon</span>
+            <span class="title-text">Companion</span>
           </div>
         </div>
         <a href="#product-section" class="scroll-arrow" @click.prevent="scrollToContent">
@@ -28,8 +28,11 @@
       <div class="main-content">
           
         <SectionIntro
-          title="Regenerative Soil Health"
-          text="Omi reads the soil in indoor plants and home gardens, helping restore natural balance and support healthier plants. By working with mycelium, a natural network that supports roots, it invites a more thoughtful relationship with the living systems we care for."
+          title="Supporting Plants from the Ground Up"
+          text="Omi focuses on what we usually don’t see: the soil.
+By reading its signals and working with mycelium, it helps restore natural balance and support healthier indoor plants.
+Instead of reacting to visible symptoms, Omi makes it possible to understand changes early, reinforce the soil, and care for plants more thoughtfully over time.
+A regenerative approach to everyday plant care, built around observation, prevention, and long-term stability."
         />
           <div class="mosaic-omi-section">
       <MosaicOmi />
@@ -46,7 +49,7 @@
           <img src="/hero-image.png" alt="Omi Product" class="hero-image" />
           <IconTooltip
             icon="/health-icon.svg"
-            label="Température"
+            label="Temperature"
             value="94 °C"
             color="#FFC473"
             innerColor="#FF5A02"
@@ -54,7 +57,7 @@
           />
           <IconTooltip
             icon="/humidity-icon.svg"
-            label="Humidité"
+            label="Humidity"
             value="67 %"
             color="#A3D9FF"
             innerColor="#2B7FFF"
@@ -71,7 +74,7 @@
           />
           <IconTooltip
             icon="/temperature-icon.svg"
-            label="Luminosité"
+            label="Luminosity"
             value="21%"
             color="#F1FFA2"
             innerColor="#FAD900"
@@ -82,15 +85,28 @@
         </div>
     </div>
     <div class="video-section">
-      <SectionIntro
-        title="Regenerative Soil Health"
-        text="Omi reads the soil in indoor plants and home gardens, helping restore natural balance and support healthier plants. By working with mycelium, a natural network that supports roots, it invites a more thoughtful relationship with the living systems we care for."
-        :light="true"
-      />
       <div class="video-columns">
-        <CardVideo src="/insertion.mp4" title="Mesurer les données de votre sol" />
-        <CardVideo src="/mycélium 2.mp4" title="Ajout d'une recharge de mycélium" />
-        <CardVideo src="/arrosage.mp4" title="Arrosage" />
+        <div class="video-block">
+          <div class="video-intro">
+            <h2 class="video-title">Reading the soil</h2>
+            <p class="video-description">Omi measures key signals from the soil and surrounding environment.<br />A simple light indicator reflects the overall state, helping anticipate stress before symptoms appear.</p>
+          </div>
+          <CardVideo src="/insertion.mp4" />
+        </div>
+        <div class="video-block">
+          <div class="video-intro">
+            <h2 class="video-title">Adding mycelium</h2>
+            <p class="video-description">A small amount of mycelium is introduced near the roots.<br />It acts as a natural extension of the plant, improving access to water and nutrients while stabilizing the soil.</p>
+          </div>
+          <CardVideo src="/mycélium 2.mp4" />
+        </div>
+        <div class="video-block">
+          <div class="video-intro">
+            <h2 class="video-title">Watering</h2>
+            <p class="video-description">With a more balanced soil, plants become more resilient.<br />They tolerate variations better, require less frequent watering, and remain stable over time.</p>
+          </div>
+          <CardVideo src="/arrosage.mp4" />
+        </div>
       </div>
     </div>
     <div class="mosaic-section">
@@ -100,26 +116,26 @@
     <div id="footer" class="footer-3d">
       <div class="footer-3d-top">
         <div class="footer-3d-left">
-          <p class="footer-3d-text">Restez informé de l'évolution du projet</p>
+          <p class="footer-3d-text">Stay informed about the project's progress</p>
         </div>
         <div class="footer-3d-right">
           <form class="newsletter-form footer-form" @submit.prevent="subscribe">
             <input
               v-model="fullName"
               type="text"
-              placeholder="Nom Prénom"
+              placeholder="Full Name"
               class="newsletter-input"
               required
             />
             <input
               v-model="email"
               type="email"
-              placeholder="Votre adresse email"
+              placeholder="Your email address"
               class="newsletter-input"
               required
             />
             <button type="submit" class="newsletter-button" :disabled="loading">
-              {{ loading ? 'Envoi...' : "S'inscrire" }}
+              {{ loading ? 'Sending...' : "Subscribe" }}
             </button>
           </form>
           <p v-if="message" :class="['newsletter-message', messageType]">{{ message }}</p>
@@ -130,7 +146,7 @@
           Contact : <a href="mailto:hello@bureau1217.com">hello@bureau1217.com</a>
         </div>
         <div class="footer-credits">
-          Projet réalisé par Bureau 1217
+          Project by Bureau 1217
         </div>
       </div>
     </div>
@@ -211,12 +227,12 @@ const subscribe = async () => {
       }
     })
 
-    message.value = 'Merci pour votre inscription !'
+    message.value = 'Thank you for subscribing!'
     messageType.value = 'success'
     fullName.value = ''
     email.value = ''
   } catch (error) {
-    message.value = error.data?.message || 'Une erreur est survenue'
+    message.value = error.data?.message || 'An error occurred'
     messageType.value = 'error'
   } finally {
     loading.value = false

@@ -832,7 +832,55 @@ body {
   width: 100%;
 }
 
+.video-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.video-intro {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.video-title {
+  font-family: 'HaasGrotDisp', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.video-description {
+  font-family: 'HaasGrotDisp', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.9;
+}
+
 @media (max-width: 768px) {
+  .video-title {
+    font-size: 2rem;
+  }
+
+  .video-description {
+    font-size: 0.9rem;
+  }
+
+  .video-intro {
+    margin-bottom: 1rem;
+  }
+
+  .video-block {
+    margin-bottom: 2rem;
+  }
+
+  .video-block:last-child {
+    margin-bottom: 0;
+  }
+
   .video-section {
     padding: 2rem 1rem;
   }

@@ -840,14 +840,18 @@ body {
 }
 
 .video-intro {
-  text-align: left;
+  text-align: center;
   margin-bottom: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .video-title {
   font-family: 'HaasGrotDisp', sans-serif;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
   margin-bottom: 0.5rem;
 }
@@ -995,7 +999,15 @@ body {
   }
 
   .video-columns {
-    gap: 2rem;
+    gap: 3rem;
+  }
+
+  .video-title {
+    font-size: 3.5rem;
+  }
+
+  .video-description {
+    font-size: 2.3rem;
   }
 
   .two-columns {

@@ -1,14 +1,37 @@
 <template>
   <div class="icon-tooltip-wrapper" :class="position">
     <img :src="icon" :alt="label" class="icon" />
-    <div class="tooltip" :style="{ backgroundColor: color }">
-      <span class="tooltip-label">{{ label }}</span>
-      <span class="tooltip-value">{{ value }}</span>
-      <div class="tooltip-arrow">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
+    <div class="tooltip-bubbles">
+      <template v-if="arrowFirst">
+        <div class="tooltip tooltip-arrow-bubble" :style="{ backgroundColor: color }">
+          <div class="tooltip-arrow arrow-left" :style="{ backgroundColor: innerColor }">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M19 12H5M5 12L12 5M5 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="tooltip tooltip-value-bubble" :style="{ backgroundColor: color }">
+          <span class="tooltip-value" :style="{ color: innerColor }">{{ value }}</span>
+        </div>
+        <div class="tooltip tooltip-label-bubble" :style="{ backgroundColor: color }">
+          <span class="tooltip-label" :style="{ color: innerColor }">{{ label }}</span>
+        </div>
+      </template>
+      <template v-else>
+        <div class="tooltip tooltip-label-bubble" :style="{ backgroundColor: color }">
+          <span class="tooltip-label" :style="{ color: innerColor }">{{ label }}</span>
+        </div>
+        <div class="tooltip tooltip-value-bubble" :style="{ backgroundColor: color }">
+          <span class="tooltip-value" :style="{ color: innerColor }">{{ value }}</span>
+        </div>
+        <div class="tooltip tooltip-arrow-bubble" :style="{ backgroundColor: color }">
+          <div class="tooltip-arrow" :style="{ backgroundColor: innerColor }">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </template>
     </div>
   </div>
 </template>
@@ -31,9 +54,17 @@ defineProps({
     type: String,
     default: '#333'
   },
+  innerColor: {
+    type: String,
+    default: '#333'
+  },
   position: {
     type: String,
     default: 'top-left'
+  },
+  arrowFirst: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
@@ -92,31 +123,46 @@ defineProps({
   z-index: 2;
 }
 
+.tooltip-bubbles {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* Left pictos: bubbles on the left */
+.icon-tooltip-wrapper.top-left .tooltip-bubbles,
+.icon-tooltip-wrapper.bottom-left .tooltip-bubbles {
+  margin-right: -10px;
+}
+
+/* Right pictos: bubbles on the right */
+.icon-tooltip-wrapper.top-right .tooltip-bubbles,
+.icon-tooltip-wrapper.bottom-right .tooltip-bubbles {
+  margin-left: -10px;
+}
+
 .tooltip {
   opacity: 0;
   height: 80px;
   padding: 0 1.5rem;
-  padding-right: 0.5rem;
   border-radius: 40px;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
   white-space: nowrap;
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
 }
 
-/* Left pictos: tooltip on the left */
+/* Left pictos: tooltip animation */
 .icon-tooltip-wrapper.top-left .tooltip,
 .icon-tooltip-wrapper.bottom-left .tooltip {
-  margin-right: 10px;
   transform: translateX(20px);
 }
 
-/* Right pictos: tooltip on the right */
+/* Right pictos: tooltip animation */
 .icon-tooltip-wrapper.top-right .tooltip,
 .icon-tooltip-wrapper.bottom-right .tooltip {
-  margin-left: 10px;
   transform: translateX(-20px);
 }
 
@@ -125,11 +171,26 @@ defineProps({
   transform: translateX(0);
 }
 
+/* Staggered animation delays */
+.tooltip-label-bubble {
+  transition-delay: 0s;
+}
+
+.tooltip-value-bubble {
+  transition-delay: 0.1s;
+}
+
+.tooltip-arrow-bubble {
+  transition-delay: 0.2s;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+}
+
 .tooltip-label {
   font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
@@ -138,18 +199,21 @@ defineProps({
   font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
 }
 
 .tooltip-arrow {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: #333;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.tooltip-arrow svg {
+  width: 24px;
+  height: 24px;
 }
 
 @keyframes float {

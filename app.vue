@@ -7,34 +7,13 @@
         <div class="hero-title">
           <div class="title-line">
             <span class="title-omi">omi</span>
-            <svg class="title-picto-svg" viewBox="0 0 159 159" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="img1" patternUnits="userSpaceOnUse" width="159" height="159">
-                  <image href="/A4 - 169.png" x="0" y="0" width="159" height="159" preserveAspectRatio="xMidYMid slice"/>
-                </pattern>
-              </defs>
-              <path d="M10.2079 103.647C-3.38989 90.0492 -3.40404 68.017 10.1763 54.4367C12.8452 51.7677 15.8407 49.6239 19.0344 48.005C29.1381 42.8835 42.8838 29.1378 48.0053 19.0341C49.6242 15.8404 51.7681 12.8449 54.437 10.176C68.0173 -3.40435 90.0495 -3.39019 103.647 10.2076C106.369 12.9293 108.546 15.989 110.18 19.2511C115.225 29.328 128.724 42.8277 138.801 47.8727C142.063 49.5059 145.123 51.6834 147.845 54.4051C161.443 68.0029 161.457 90.0351 147.876 103.615C145.207 106.284 142.212 108.428 139.018 110.047C128.915 115.169 115.169 128.914 110.048 139.018C108.429 142.212 106.285 145.207 103.616 147.876C90.0354 161.456 68.0032 161.442 54.4054 147.845C51.6837 145.123 49.5061 142.063 47.8729 138.801C42.828 128.724 29.3284 115.224 19.2516 110.179C15.9894 108.546 12.9297 106.369 10.2079 103.647Z" fill="url(#img1)"/>
-            </svg>
+            <img src="/Union.svg" alt="" class="title-picto-svg" />
             <span class="title-text">Soil</span>
           </div>
           <div class="title-line">
-            <svg class="title-picto-svg" viewBox="0 0 159 159" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="img2" patternUnits="userSpaceOnUse" width="159" height="159">
-                  <image href="/A4 - 169.png" x="0" y="0" width="159" height="159" preserveAspectRatio="xMidYMid slice"/>
-                </pattern>
-              </defs>
-              <path d="M10.2079 103.647C-3.38989 90.0492 -3.40404 68.017 10.1763 54.4367C12.8452 51.7677 15.8407 49.6239 19.0344 48.005C29.1381 42.8835 42.8838 29.1378 48.0053 19.0341C49.6242 15.8404 51.7681 12.8449 54.437 10.176C68.0173 -3.40435 90.0495 -3.39019 103.647 10.2076C106.369 12.9293 108.546 15.989 110.18 19.2511C115.225 29.328 128.724 42.8277 138.801 47.8727C142.063 49.5059 145.123 51.6834 147.845 54.4051C161.443 68.0029 161.457 90.0351 147.876 103.615C145.207 106.284 142.212 108.428 139.018 110.047C128.915 115.169 115.169 128.914 110.048 139.018C108.429 142.212 106.285 145.207 103.616 147.876C90.0354 161.456 68.0032 161.442 54.4054 147.845C51.6837 145.123 49.5061 142.063 47.8729 138.801C42.828 128.724 29.3284 115.224 19.2516 110.179C15.9894 108.546 12.9297 106.369 10.2079 103.647Z" fill="url(#img2)"/>
-            </svg>
+            <img src="/Union-1.svg" alt="" class="title-picto-svg title-picto-smaller" />
             <span class="title-text">Health</span>
-            <svg class="title-picto-svg" viewBox="0 0 159 159" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="img3" patternUnits="userSpaceOnUse" width="159" height="159">
-                  <image href="/A4 - 169.png" x="0" y="0" width="159" height="159" preserveAspectRatio="xMidYMid slice"/>
-                </pattern>
-              </defs>
-              <path d="M10.2079 103.647C-3.38989 90.0492 -3.40404 68.017 10.1763 54.4367C12.8452 51.7677 15.8407 49.6239 19.0344 48.005C29.1381 42.8835 42.8838 29.1378 48.0053 19.0341C49.6242 15.8404 51.7681 12.8449 54.437 10.176C68.0173 -3.40435 90.0495 -3.39019 103.647 10.2076C106.369 12.9293 108.546 15.989 110.18 19.2511C115.225 29.328 128.724 42.8277 138.801 47.8727C142.063 49.5059 145.123 51.6834 147.845 54.4051C161.443 68.0029 161.457 90.0351 147.876 103.615C145.207 106.284 142.212 108.428 139.018 110.047C128.915 115.169 115.169 128.914 110.048 139.018C108.429 142.212 106.285 145.207 103.616 147.876C90.0354 161.456 68.0032 161.442 54.4054 147.845C51.6837 145.123 49.5061 142.063 47.8729 138.801C42.828 128.724 29.3284 115.224 19.2516 110.179C15.9894 108.546 12.9297 106.369 10.2079 103.647Z" fill="url(#img3)"/>
-            </svg>
+            <img src="/Union-2.svg" alt="" class="title-picto-svg" />
           </div>
           <div class="title-line">
             <span class="title-text">Compagnon</span>
@@ -47,16 +26,14 @@
     </div>
     <div id="product-section" class="content">
       <div class="main-content">
-        <div class="product-intro">
-          <h2 class="section-subtitle">Regenerative Soil Health</h2>
-          <p class="section-description">
-            Omi reads the soil in indoor plants and home gardens,
-            helping restore natural balance and support healthier
-            plants. By working with mycelium, a natural network
-            that supports roots, it invites a more thoughtful
-            relationship with the living systems we care for.
-          </p>
-        </div>
+          
+        <SectionIntro
+          title="Regenerative Soil Health"
+          text="Omi reads the soil in indoor plants and home gardens, helping restore natural balance and support healthier plants. By working with mycelium, a natural network that supports roots, it invites a more thoughtful relationship with the living systems we care for."
+        />
+          <div class="mosaic-omi-section">
+      <MosaicOmi />
+    </div>
         <div class="sliderbox-section">
           <div class="sliderbox-columns">
             <SliderBox
@@ -84,76 +61,81 @@
           <img src="/hero-image.png" alt="Omi Product" class="hero-image" />
           <IconTooltip
             icon="/health-icon.svg"
-            label="Health Index"
-            value="94 %"
-            color="#F5A623"
+            label="Température"
+            value="94 °C"
+            color="#FFC473"
+            innerColor="#FF5A02"
             position="top-left"
           />
           <IconTooltip
             icon="/humidity-icon.svg"
-            label="Humidity Level"
+            label="Humidité"
             value="67 %"
-            color="#2196F3"
+            color="#A3D9FF"
+            innerColor="#2B7FFF"
             position="top-right"
+            arrowFirst
           />
           <IconTooltip
             icon="/luminosity-icon.svg"
-            label="Light Exposure"
+            label="CO²"
             value="82 %"
-            color="#9C27B0"
+            color="#E9CBFB"
+            innerColor="#CC77FE"
             position="bottom-left"
           />
           <IconTooltip
             icon="/temperature-icon.svg"
-            label="Temperature"
-            value="21 °C"
-            color="#4CAF50"
+            label="Luminosité"
+            value="21%"
+            color="#F1FFA2"
+            innerColor="#FAD900"
             position="bottom-right"
+            arrowFirst
           />
         </div>
         </div>
     </div>
     <div class="video-section">
       <div class="video-columns">
-        <CardVideo src="/insertion.mp4" />
-        <CardVideo src="/mycélium 2.mp4" />
-        <CardVideo src="/arrosage.mp4" />
-      </div>
-    </div>
-    <div class="two-columns">
-      <div class="column-image">
-        <img src="/Mask group.png" alt="Mask group" class="mask-image" />
-      </div>
-      <div class="column-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <CardVideo src="/insertion.mp4" title="Mesurer les données de votre sol" />
+        <CardVideo src="/mycélium 2.mp4" title="Ajout d'une recharge de mycélium" />
+        <CardVideo src="/arrosage.mp4" title="Arrosage" />
       </div>
     </div>
     <div class="mosaic-section">
       <Mosaic />
     </div>
+
     <div id="footer" class="footer-3d">
-      <div class="footer-3d-left">
-        <p class="footer-3d-text">Restez informé de l'évolution du projet</p>
-        <form class="newsletter-form footer-form" @submit.prevent="subscribe">
-          <input
-            v-model="fullName"
-            type="text"
-            placeholder="Nom Prénom"
-            class="newsletter-input"
-            required
-          />
-          <input
-            v-model="email"
-            type="email"
-            placeholder="Votre adresse email"
-            class="newsletter-input"
-            required
-          />
-          <button type="submit" class="newsletter-button" :disabled="loading">
-            {{ loading ? 'Envoi...' : "S'inscrire" }}
-          </button>
-        </form>
-        <p v-if="message" :class="['newsletter-message', messageType]">{{ message }}</p>
+      <div class="footer-3d-top">
+        <div class="footer-3d-left">
+          <p class="footer-3d-text">Restez informé de l'évolution du projet</p>
+        </div>
+        <div class="footer-3d-right">
+          <form class="newsletter-form footer-form" @submit.prevent="subscribe">
+            <input
+              v-model="fullName"
+              type="text"
+              placeholder="Nom Prénom"
+              class="newsletter-input"
+              required
+            />
+            <input
+              v-model="email"
+              type="email"
+              placeholder="Votre adresse email"
+              class="newsletter-input"
+              required
+            />
+            <button type="submit" class="newsletter-button" :disabled="loading">
+              {{ loading ? 'Envoi...' : "S'inscrire" }}
+            </button>
+          </form>
+          <p v-if="message" :class="['newsletter-message', messageType]">{{ message }}</p>
+        </div>
+      </div>
+      <div class="footer-3d-bottom">
         <div class="footer-contact">
           Contact : <a href="mailto:hello@bureau1217.com">hello@bureau1217.com</a>
         </div>

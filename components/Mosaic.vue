@@ -50,14 +50,11 @@
 <style scoped>
 .mosaic {
   width: 100%;
-  padding: 2rem;
 }
 
 .mosaic-grid {
   position: relative;
   width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
   aspect-ratio: 1920 / 800;
 }
 
@@ -164,7 +161,7 @@
   height: 40%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 2200px) {
   .mosaic-grid {
     aspect-ratio: 1920 / 1000;
   }

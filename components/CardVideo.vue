@@ -44,8 +44,7 @@ defineProps({
   width: 100%;
   border-radius: 80px;
   overflow: hidden;
-  aspect-ratio: 4 / 6
-  ;
+  aspect-ratio: 4 / 5;
 }
 
 .card-video video {

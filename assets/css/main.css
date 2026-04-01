@@ -129,7 +129,7 @@ body {
   font-family: 'ReformST', sans-serif;
   font-size: clamp(8rem, 22vw, 20rem);
   font-weight: 500;
-  color: #CE79FF;
+  color: #094F07;
   line-height: 0.9;
 }
 
@@ -137,7 +137,7 @@ body {
   font-family: 'HaasGrotDisp', sans-serif;
   font-size: clamp(7rem, 18vw, 18rem);
   font-weight: 300;
-  color: #CE79FF;
+  color: #094F07;
   line-height: 0.9;
 }
 
@@ -369,14 +369,14 @@ body {
   font-weight: 500;
   border: none;
   border-radius: 50px;
-  background: #2b7fff;
+  background: #094F07;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .newsletter-button:hover {
-  background: #1a6ae6;
+  background: #073d05;
   transform: translateY(-1px);
 }
 
@@ -536,8 +536,8 @@ body {
   font-family: 'HaasGrotDisp', sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #333;
-  background: #FFB84D;
+  color: #fff;
+  background: #094F07;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -546,8 +546,8 @@ body {
 }
 
 .keep-in-touch-btn:hover {
-  background: #E5A340;
-  color: #333;
+  background: #073d05;
+  color: #fff;
 }
 
 /* Scroll arrow */
@@ -652,7 +652,7 @@ body {
   font-family: 'HaasGrotDisp', sans-serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
-  color: #2b7fff;
+  color: #094F07;
   max-width: 600px;
   line-height: 1.1;
 }
@@ -687,11 +687,11 @@ body {
 
 .footer-contact {
   font-size: 0.875rem;
-  color: #2b7fff;
+  color: #094F07;
 }
 
 .footer-contact a {
-  color: #2b7fff;
+  color: #094F07;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -702,7 +702,7 @@ body {
 
 .footer-credits {
   font-size: 0.875rem;
-  color: #2b7fff;
+  color: #094F07;
 }
 
 
@@ -761,8 +761,8 @@ body {
   position: relative;
   z-index: 5;
   width: 100%;
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #D072FF;
@@ -778,12 +778,17 @@ body {
 
 .sliderbox-columns {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   width: 100%;
 }
 
-.sliderbox-columns>* {
-  flex: 1;
+.group-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -842,6 +847,7 @@ body {
   .hero-wrapper {
     max-width: 1600px;
     height: 1200px;
+    margin-bottom: 12rem;
   }
 
   .hero-image {
@@ -867,7 +873,7 @@ body {
 
   .section-description {
     font-size: 1.75rem;
-    max-width: 900px;
+    max-width: 2000px;
   }
 
   .video-section {
@@ -919,6 +925,8 @@ body {
   .hero-wrapper {
     max-width: 1800px;
     height: 1400px;
+    margin-bottom: 25rem;
+    margin-top: 15rem;
   }
 
   .hero-image {

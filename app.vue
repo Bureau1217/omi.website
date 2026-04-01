@@ -36,24 +36,9 @@
     </div>
         <div class="sliderbox-section">
           <div class="sliderbox-columns">
-            <SliderBox
-              number="1"
-              title="Analyse du sol"
-              text="Omi mesure en temps réel les nutriments, l'humidité et la santé de votre sol pour des plantes en pleine forme."
-              image="/photo.webp"
-            />
-            <SliderBox
-              number="2"
-              title="Mycélium actif"
-              text="Le réseau fongique naturel renforce les racines et améliore l'absorption des nutriments essentiels."
-              image="/photo.webp"
-            />
-            <SliderBox
-              number="3"
-              title="Conseils personnalisés"
-              text="Recevez des recommandations adaptées à chaque plante pour optimiser leur croissance."
-              image="/photo.webp"
-            />
+            <img src="/Group1-1.svg" alt="Group 1" class="group-image" />
+            <img src="/Group2-2.svg" alt="Group 2" class="group-image" />
+            <img src="/Group3-3.svg" alt="Group 3" class="group-image" />
           </div>
         </div>
         <div class="hero-wrapper">
@@ -97,6 +82,11 @@
         </div>
     </div>
     <div class="video-section">
+      <SectionIntro
+        title="Regenerative Soil Health"
+        text="Omi reads the soil in indoor plants and home gardens, helping restore natural balance and support healthier plants. By working with mycelium, a natural network that supports roots, it invites a more thoughtful relationship with the living systems we care for."
+        :light="true"
+      />
       <div class="video-columns">
         <CardVideo src="/insertion.mp4" title="Mesurer les données de votre sol" />
         <CardVideo src="/mycélium 2.mp4" title="Ajout d'une recharge de mycélium" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="section-intro">
+  <div class="section-intro" :class="{ light: light }">
     <h2 class="section-subtitle">{{ title }}</h2>
     <p class="section-description">{{ text }}</p>
   </div>
@@ -14,6 +14,10 @@ defineProps({
   text: {
     type: String,
     required: true
+  },
+  light: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
@@ -22,23 +26,27 @@ defineProps({
 .section-intro {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 1500px;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: 1800px;
+  width: 100%;
+  margin-bottom: 8rem;
 }
 
 .section-subtitle {
   font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #094F07;
   margin: 0;
 }
 
 .section-description {
   font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.3;
-  color: #444;
+  color: #094F07;
   margin: 0;
 }
 
@@ -50,5 +58,10 @@ defineProps({
   .section-description {
     font-size: 1rem;
   }
+}
+
+.section-intro.light .section-subtitle,
+.section-intro.light .section-description {
+  color: #fff;
 }
 </style>
